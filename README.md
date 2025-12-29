@@ -2,6 +2,7 @@
 
 A GenAI-powered demand planning dashboard that uses **Amazon Chronos-Bolt (Foundation Model)** to perform Zero-Shot forecasting on retail inventory.
 
+[Link to Deployed app](https://huggingface.co/spaces/Karthix1/chronos-supply-chain-forecaster) 
 ### The Problem
 Traditional supply chain models (ARIMA, XGBoost) suffer from the **Cold Start Problem**: they require massive historical data to train a new model for every single product.
 
@@ -21,4 +22,5 @@ I deployed **Amazon Chronos**, a Time-Series Foundation Model based on the T5 ar
 ### Tech Stack
 *   **Model:** Amazon Chronos (PyTorch / HuggingFace)
 *   **Frontend:** Streamlit
+
 *   **Deployment:** Hugging Face Spaces (CPU Inference)
