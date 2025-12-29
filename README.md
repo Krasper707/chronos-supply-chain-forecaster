@@ -24,3 +24,18 @@ I deployed **Amazon Chronos**, a Time-Series Foundation Model based on the T5 ar
 *   **Frontend:** Streamlit
 
 *   **Deployment:** Hugging Face Spaces (CPU Inference)
+
+
+## Case Study: Multi-Domain Adaptability
+
+To validate the "Universal" capability of the Foundation Model, I tested the system on two distinct domains without retraining:
+
+### 1. Retail Supply Chain (Walmart M5)
+*   **Challenge:** Sparse, intermittent demand (Slow Movers).
+*   **Result:** Model correctly identified zero-inflated patterns and generated non-negative safety stock recommendations.
+*   ![Retail Graph](demo_graph_retail.png)
+
+### 2. Smart City Logistics (Interstate Traffic Volume)
+*   **Challenge:** High-frequency (Hourly) data with complex "Double Peak" daily seasonality (Rush Hours).
+*   **Result:** Chronos successfully captured the morning/evening commute nuances, enabling precise departure scheduling.
+*   ![Traffic Graph](demo_graph_traffic.png)
